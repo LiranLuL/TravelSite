@@ -1,0 +1,540 @@
+@font-face {
+    font-family: "AeroMaticsBold";
+    src: url("/fonts/AeroMatics/AeroMaticsBold/AeroMaticsBold.eot");
+    src: url("/fonts/AeroMaticsBold/AeroMaticsBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AeroMaticsBold/AeroMaticsBold.woff") format("woff"),
+    url("../fonts/AeroMaticsBold/AeroMaticsBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AeroMaticsBoldItalic";
+    src: url("../fonts/AeroMaticsBoldItalic/AeroMaticsBoldItalic.eot");
+    src: url("../fonts/AeroMaticsBoldItalic/AeroMaticsBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AeroMaticsBoldItalic/AeroMaticsBoldItalic.woff") format("woff"),
+    url("../fonts/AeroMaticsBoldItalic/AeroMaticsBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "AeroMaticsItalic";
+    src: url("../fonts/AeroMaticsItalic/AeroMaticsItalic.eot");
+    src: url("../fonts/AeroMaticsItalic/AeroMaticsItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AeroMaticsItalic/AeroMaticsItalic.woff") format("woff"),
+    url("../fonts/AeroMaticsItalic/AeroMaticsItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+  * {
+      font-family: "AeroMaticsBoldItalic";
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /**/
+  .img_logo {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  
+  .header-text{
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+    z-index: 2;
+    padding: 0 0.7em;
+  }
+  
+  .title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  
+  .title:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top:50px;
+  }
+  
+  .Suptitle {
+    color: white;
+    height: 45px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .line {
+    margin: 0;
+    margin-top: 3px;
+    border: none;
+    background-color: white;
+    color: white;
+    height: 1px;
+    padding: 0;
+  }
+  
+  .logo {
+    color: white;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-family: "Mak";
+    font-weight: 700;
+  }
+ 
+
+  .navbar_elem {
+    margin: 0;
+    padding: 1em 1.4em;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar_elem:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: rgb(245, 85, 6);
+  }
+  
+  .navbar_list {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+  }
+  .fullresolution {
+    width: 100%;
+  }
+  .container {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .maincontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header-text {
+    color: white;
+    font-size: 3rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .img {
+    width: 98vw;
+  }
+  .header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 6.5rem;
+  }
+  .container {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .textabout {
+    color: white;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: lighter;
+    text-align: left;
+    padding-bottom: 1em;
+  }
+  .Shrilanka-png {
+    width: 100%;
+    margin-top: 2px;
+    height: 100%;
+  }
+  
+  .items {
+    width: 60%;
+    height: 15em;
+    background-color: unset;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+  }
+  
+  .description {
+    color: rgb(153, 149, 149);
+    margin-top: 1em;
+    transition: all 0.5s;
+  }
+  
+  .items_elem {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .items-img {
+    width: 20em;
+    height: 10em;
+    background-color: unset;
+    margin: 0 1em;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    transition: all 0.5s;
+    text-decoration: none;
+  }
+  .items-img:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+    filter: none;
+    filter: none; /* IE 6-9 */
+  }
+  .lookit {
+    color: white;
+    margin: 1em;
+    margin-top: 3em;
+  }
+  .text-description {
+    text-decoration: none;
+  }
+  .description:hover {
+    color: white;
+  }
+  .img {
+    width: 98vw;
+  }
+
+  .wrapper-onmap{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    height: 120vh;
+  }
+  .descript{
+    width: 48vw;
+    height:100%;
+    color: white;
+    font-weight: 100;
+    font-family: "AeroMaticsItalic", sans-serif;
+    font-size: 1.4rem;
+  }
+
+  iframe{
+    height:60vh;
+    width:50%;
+  }
+  
+  .bogan{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sri-lanka{
+    display:flex;
+    
+    justify-content: space-between;
+  }
+
+
+  /*footer*/
+  /*footer*/
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+  
+  .logo{
+    height: 10vh;
+    display: flex;
+   align-items: center;
+  }
+  
+  .logo-text{
+    color: white;
+    height: rem;
+    font-size: 2rem;
+    font-family: "Mak";
+  }
+  
+  
+  
+  .allsocial {
+    height: 10vh;
+    width: 20rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  
+  #social {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  
+  
+  #social li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #social li:first-child {
+    margin-right: 3rem;
+  }
+  
+  #social li:last-child {
+    margin-left: 3rem;
+  }
+  
+  
+  /** Facebook **/
+  
+  .facebook {
+    width: 2rem;
+    height: 2rem;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+  }
+  
+  .facebook .border {
+    background: transparent;
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+    width:2.5rem;
+    height: 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all .2s ease-in-out;
+  }
+  
+  .facebook .border:hover {
+    background: #3b5998;
+    border-color: #436aaf;
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-facebook {
+    font-size: 1.5rem;
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+  }
+  
+  
+  /** Twitter **/
+  
+  .twitter {
+    width:2rem;
+    height: 2rem;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+  }
+  
+  .twitter .border {
+    background: transparent;
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+    width:2.5rem;
+    height: 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all .2s ease-in-out;
+  }
+  
+  .twitter .border:hover {
+    background: #00aced;
+    border-color: #72c6e6;
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-twitter {
+    font-size: 1.5rem;
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+  }
+  
+  
+  /** Instagram **/
+  
+  .instagram {
+    width: 2rem;
+    height:2rem;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+  }
+  
+  .instagram .border {
+    background: transparent;
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+    width:2.5rem;
+    height: 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all .2s ease-in-out;
+  }
+  
+  .instagram .border:hover {
+    background: #517fa4;
+    border-color: #7495af;
+    color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.2);
+  }
+  
+  .fa.fa-instagram {
+    font-size: 1.5rem;
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    :root{
+      font-size: 12px;
+    }
+    .descript{
+        width: 48vw;
+        height:40vh;
+        color: white;
+        font-weight: 100;
+        font-family: "AeroMaticsItalic", sans-serif;
+        font-size: 1.5em;
+      }
+    hr{
+      margin-top: 6px;
+    }
+    .textabout{
+      font-size: 1em;
+    }
+    .header-text{
+      font-size: 1.5em;  
+    }
+    .title:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      top:1.7em;
+      }
+      .items{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+      }
+      .items li:last-child{
+        margin-top: 2em;
+      }
+      .navbar_elem{
+        font-size: 0.9em;
+      }
+  }
+  
+  @media screen and (max-width: 380px) {
+    .header{
+      font-size: 0.8rem;
+    }
+    .logo{
+      font-size: 2.5rem;
+    }
+    :root{
+      font-weight: 100;
+      font-size: 0.5rem;
+    }
+    .header-text{
+      font-size: 2em;
+    }
+    .title:before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top:2.2em;
+      }
+    .textabout{
+      font-size: 1.3em;
+    }
+  }
+  @media screen and (max-width: 380px){
+    .header{
+      font-size: 0.8rem;
+    }
+    .logo{
+      font-size: 2.5rem;
+    }
+    :root{
+      font-weight: 100;
+      font-size: 0.5rem;
+    }
+    .header-text{
+      font-size: 2.1em;
+    }
+    .textabout{
+      font-size: 1.2em;
+    }
+  }
+  
+  
