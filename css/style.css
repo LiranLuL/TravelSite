@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: "Mak";
-  src: url("fonts/Mak-Light.eot");
-  src: url("fonts/Mak-Light.eot?#iefix") format("embedded-opentype"),
+  src: url("/fonts/Mak-Light.eot");
+  src: url("/fonts/Mak-Light.eot?#iefix") format("embedded-opentype"),
     url("fonts/Mak-Light.woff2") format("woff2"),
     url("fonts/Mak-Light.woff") format("woff"),
     url("fonts/Mak-Light.ttf") format("truetype"),
@@ -118,7 +118,7 @@ hr {
     width: 100%;
     height:100%;
     background-size: cover;
-    background-image: url(img/a81e71c7941345bc88272fa87b55e375.max-2500x1500.jpg);
+    background-image: url(/img/a81e71c7941345bc88272fa87b55e375.max-2500x1500.jpg);
 }
 
 
