@@ -142,9 +142,8 @@ hr {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
- 
+  margin-top: 1em;
+  margin-bottom: 1.5em;
   width: 100%;
 }
 .title:before{
@@ -234,11 +233,13 @@ footer{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 10vh;
 }
 
 .logo{
+  height: 10vh;
   display: flex;
+ align-items: center;
 }
 
 .logo-text{
@@ -251,7 +252,7 @@ footer{
 
 
 .allsocial {
-  height: 7rem;
+  height: 10vh;
   width: 20rem;
   background-color: black;
   display: flex;
@@ -402,8 +403,13 @@ footer{
 }
 
 @media screen and (max-width: 1000px) {
+  
   :root{
     font-size: 12px;
+  }
+  
+  hr{
+    margin-top: 6px;
   }
   .textabout{
     font-size: 1em;
@@ -415,7 +421,7 @@ footer{
     content: '';
     display: block;
     width: 100%;
-    height: 3px;
+    height: 1px;
     background-color: white;
     position: absolute;
     top:0.9em;
@@ -427,6 +433,9 @@ footer{
     }
     .items li:last-child{
       margin-top: 2em;
+    }
+    .navbar_elem{
+      font-size: 0.9em;
     }
 }
 
