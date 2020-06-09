@@ -1,4 +1,15 @@
 @font-face {
+  font-family: "Mak";
+  src: url("/fonts/Mak-Light.eot");
+  src: url("/fonts/Mak-Light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Mak-Light.woff2") format("woff2"),
+    url("/fonts/Mak-Light.woff") format("woff"),
+    url("/fonts/Mak-Light.ttf") format("truetype"),
+    url("/fonts/Mak-Light.svg#Mak-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
     font-family: "AeroMaticsBold";
     src: url("/fonts/AeroMatics/AeroMaticsBold/AeroMaticsBold.eot");
     src: url("/fonts/AeroMaticsBold/AeroMaticsBold.eot?#iefix")format("embedded-opentype"),
@@ -40,7 +51,30 @@
     height: 100%;
     background-color: white;
   }
+  .wrapp{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 10vh;
+  }
   
+  .logo {
+    color: white;
+    height: 3rem;
+      padding: 0;
+    margin: 0;
+    font-size: 40px;
+    font-family: "Mak";
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .logo-text{
+    color: white;
+    font-size: 2rem;
+    font-family: "Mak";
+  }
   .header-text{
     font-size: 3rem;
     color: white;
