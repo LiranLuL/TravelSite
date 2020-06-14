@@ -38,7 +38,6 @@
   height: 80px;
   background-color: white;
 }
-
 .header {
   flex-direction: column;
   display: flex;
@@ -58,11 +57,13 @@
   font-size: 40px;
   font-family: "Mak";
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .navbar_elem {
-    margin: 0;
-    padding: 1em 1.4em;
+  margin: 0;
+  padding: 1em 1.4em;
   text-decoration: none;
   color: white;
 }
@@ -110,6 +111,7 @@ hr {
   color: white;
   background-color: unset;
   margin-top: 2rem;
+  font-size: 2em;
 }
 
 .button-main{
@@ -120,7 +122,7 @@ hr {
     border-radius: 2em;
     border:none;
     cursor: pointer;
-    padding: 0.7em;
+    padding: 1rem;
     font-size: medium;
     outline: none;
     font-weight: 900;
@@ -143,8 +145,88 @@ hr {
     width: 100%;
     height:100%;
     background-size: cover;
-    background-image: url(/img/a81e71c7941345bc88272fa87b55e375.max-2500x1500.jpg);
+    background-image: url(/img/Origin.jpg);
+}
+@media screen and (max-width: 1000px) {
+  :root{
+    font-size: 10px;
+  }
+  .descript{
+    font-size: 1em;
+  }
+  hr{
+    margin-top:0.8em;
+  }
+  .textabout{
+    font-size: 1em;
+  }
+  .header-text{
+    font-size: 1.5em;  
+  }
+  .title:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top:1.7em;
+    }
+    .items{
+      flex-direction: column;
+      width: 90%;
+      height: 100%;
+    }
+    .items li:last-child{
+      margin-top: 2em;
+    }
+    .navbar_elem{
+      font-size: 0.9em;
+    }
 }
 
-
-/*footer*/
+@media screen and (max-width: 380px) {
+  footer{
+    border: white 1px solid;
+    flex: 0 0 auto;
+    height: 10vh;
+  }
+ 
+  .header{
+    font-size: 0.8rem;
+  }
+  .logo{
+    font-size: 2.5rem;
+  }
+  .wrapper-onmap{
+    height: 80vh;
+  }
+  :root{
+    font-weight: 100;
+    font-size: 6px;
+  }
+  .header-text{
+    font-size: 2em;
+  }
+  .title:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top:2.2em;
+    }
+  .descript{
+    font-size:1.1em;
+  }
+  header{
+    font-size: 0.8rem;
+  }
+  .logo{
+    font-size: 2.5rem;
+  }
+  .header-text{
+    font-size: 2.1em;
+  }
+}

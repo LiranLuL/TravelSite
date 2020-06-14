@@ -104,6 +104,19 @@ color: white;
   margin: 0;
 }
 
+#text{
+  display:none;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  padding: 0em 1em;
+}
+
+#text:hover {
+  transition: 0.4s;
+  color: rgb(245, 85, 6);
+}
+
 .header_fixed {
   transition: 3s;
   position: fixed;
@@ -121,7 +134,9 @@ color: white;
 /*body*/
 .lotr {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 .lotr-look{
   display: flex;
@@ -145,11 +160,9 @@ hr {
   width: 100%;
 }
 .container {
-  max-width: 70%;
-  display: flex;
-  flex-direction: column;   
-  align-items: center;
-  justify-content: center;
+ display: flex;
+ flex-direction: column;
+
 }
 .maincontent {
   display: flex;
@@ -196,21 +209,15 @@ top:30px;
 }
 .textabout {
   color: white;
-  font-weight: 3000;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: left;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 5em;
+  font-weight: 300;
+    font-size: 1.5em;
+    width: 50%;
+    padding: 0 1em;
 }
 .img{
     display: flex;
-    width: 55%;
+    width: 50%;
     height: 100%;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
  }
 .items{
   width: 60%;
@@ -234,6 +241,7 @@ color: white;
 display: flex;
 flex-direction: column;
 align-items: center;
+margin-top: 1em;
 }
 
 .items-img{
@@ -464,12 +472,19 @@ footer{
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 1000px) {
-  
+@media screen and (max-width: 1300px) {
+  .items_elem{
+    margin-top: 2em;
+  }
+  .textabout {
+    color: white;
+    font-weight: 300;
+      font-size: 1.5em;
+      padding: 0em 1em;
+  }
   :root{
     font-size: 12px;
   }
-  
   hr{
     margin-top: 6px;
   }
@@ -499,9 +514,10 @@ footer{
     .navbar_elem{
       font-size: 0.9em;
     }
+   
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 680px) {
   .header{
     font-size: 0.8rem;
   }
@@ -510,7 +526,7 @@ footer{
   }
   :root{
     font-weight: 100;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .header-text{
     font-size: 2em;
@@ -524,9 +540,21 @@ footer{
     position: absolute;
     top:1.2em;
     }
-  .textabout{
-    
-    font-size: 1.3em;
+  
+  .textabout {
+    color: white;
+    font-weight: 300;
+      font-size: 1em;
+      line-height: 1em;
+      margin: 0.2em;
+      width: 100%;
+  }
+  .description-low{
+    flex-direction: column;
+  }
+  .img{
+    width: 100%;
+    margin-top: 1em;
   }
 }
 @media screen and (max-width: 380px){
