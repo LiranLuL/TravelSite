@@ -4,8 +4,18 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>Паган</title>
     <meta name="viewport" content="width=device-width" />
-    <script src="/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/styleBogan.css" />
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+      function viewdiv(id) {
+        var el = document.getElementById(id);
+        if (el.style.display == "block") {
+          el.style.display = "none";
+        } else {
+          el.style.display = "list-item";
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -15,7 +25,15 @@
         <li><a class="navbar_elem" href="/Bagan.html">Паган</a></li>
         <li><a class="navbar_elem" href="/Shrilanka.html">Шри-Ланка</a></li>
         <li><a class="navbar_elem" href="/last.html">Известные места</a></li>
-        <li><a class="navbar_elem" href="/onMap.html">Места на карте</a></li>
+        <li>
+          <a
+            class="navbar_elem"
+            href="javascript:void(0);"
+            onclick="viewdiv('text');"
+            >Поддержка</a
+          >
+        </li>
+        <li><a id="text" href="/onMap.html">Места на карте</a></li>
       </ul>
     </header>
     <hr />
@@ -143,11 +161,24 @@
         </li>
 
         <li class="items_elem">
-          <a href="/Bagan.html">
-            <img class="items-img" src="/img/bagan.jpg" alt="2" />
+          <a href="/last.html">
+            <img
+              class="items-img"
+              src="/img/film-movie-the-lord-of-the.jpg"
+              alt="1"
+            />
           </a>
-          <a class="text-description" href="/Bagan.html"
-            ><p class="description">Паган</p></a
+          <a class="text-description" href="/last.html"
+            ><p class="description">Известные места</p></a
+          >
+        </li>
+
+        <li class="items_elem">
+          <a href="/onMap.html">
+            <img class="items-img" src="/img/map.jpg" alt="1" />
+          </a>
+          <a class="text-description" href="/onMap.html"
+            ><p class="description">На карте</p></a
           >
         </li>
       </ul>
@@ -156,14 +187,15 @@
 
     <footer>
       <div class="wrapp">
-      <div class="logo">
-        <p class="logo-text">SOFA TRAVEL</p>
-        <p style="color: rgb(131, 130, 130);font-size: 0.7rem;">Copyright © Alex Kalitin & Alexandr Fedorov (SOFA TRAVEL) 2020 All rights reserved</p>
+        <div class="logo">
+          <p class="logo-text">SOFA TRAVEL</p>
+        </div>
       </div>
-</div>
       <div class="allsocial">
-        
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+          rel="stylesheet"
+        />
 
         <div class="center">
           <div id="social">
@@ -171,24 +203,19 @@
               <li class="facebook">
                 <button class="border"><i class="fa fa-facebook"></i></button>
               </li>
-        
+
               <li class="twitter">
                 <button class="border"><i class="fa fa-twitter"></i></button>
               </li>
-        
+
               <li class="instagram">
                 <button class="border"><i class="fa fa-instagram"></i></button>
               </li>
-        
-              
             </ul>
           </div>
         </div>
-
       </div>
-   
     </footer>
-    
   </body>
 
   <link

@@ -67,7 +67,18 @@
  justify-content: center;
  height: 10vh;
 }
-
+#text{
+  display:none;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  padding: 0em 1em;
+}
+#text:hover {
+  transition: 0.4s;
+  color: rgb(245, 85, 6);
+  
+}
 .logo {
   color: white;
   height: 3rem;
@@ -206,9 +217,7 @@ top:50px;
   color: white;
   font-weight: 400;
   font-family: "AeroMaticsItalic", sans-serif;
-  font-size: 1.5rem;
-  line-height: 32px;
-  font-weight: lighter;
+  font-size: 1.3rem;
   text-align: left;
   margin-bottom: 1em;
 }
@@ -234,6 +243,7 @@ top:50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 .items-img {
@@ -448,7 +458,7 @@ footer{
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   :root{
     font-size: 12px;
   }
@@ -475,6 +485,10 @@ footer{
       flex-direction: column;
       width: 90%;
       height: 100%;
+      
+    }
+    .items_elem{
+      margin-top: 2em;
     }
     .items li:last-child{
       margin-top: 2em;
@@ -484,7 +498,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 460px) {
   .header{
     font-size: 0.8rem;
   }

@@ -55,7 +55,7 @@
     display: flex;
    align-items: center;
    justify-content: center;
-   height: 10vh;
+   height: 15vh;
   }
   
   .logo {
@@ -280,29 +280,34 @@
     height: 120vh;
   }
   .descript{
-    width: 48vw;
+    width: 50%;
     height:100%;
     color: white;
     font-weight: 100;
     font-family: "AeroMaticsItalic", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   iframe{
-    height:60vh;
+    height: 100%;
     width:50%;
   }
   
   .bogan{
+    width: 100%;
+    height:50%;
     display:flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
   }
 
   .sri-lanka{
     display:flex;
-    
-    justify-content: space-between;
+    width: 100%;
+    height:50%;
   }
 
 
@@ -313,13 +318,13 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
   }
   
   .logo{
-    height: 10vh;
+    height: 15vh;
     display: flex;
-   align-items: center;
+  
   }
   
   .logo-text{
@@ -332,7 +337,7 @@
   
   
   .allsocial {
-    height: 10vh;
+    height: 15vh;
     width: 20rem;
     background-color: black;
     display: flex;
@@ -475,27 +480,31 @@
   
   .fa.fa-instagram {
     font-size: 1.5rem;
-    -ms-transform: rotate(-45deg);
+    -ms-transforms: rotate(-45deg);
     /* IE 9 */
     -webkit-transform: rotate(-45deg);
     /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
   }
-  
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px){
     :root{
       font-size: 12px;
     }
-    .descript{
-        width: 48vw;
-        height:40vh;
-        color: white;
-        font-weight: 100;
-        font-family: "AeroMaticsItalic", sans-serif;
-        font-size: 1.5em;
-      }
     hr{
-      margin-top: 6px;
+      margin-top: 0.8em;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    :root{
+      font-size: 10px;
+    }
+    .descript{
+      font-size: 1em;
+    }
+    hr{
+      margin-top:0.8em;
+      
     }
     .textabout{
       font-size: 1em;
@@ -525,16 +534,22 @@
       }
   }
   
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 480px) {
+    footer{
+      height: 15vh;
+    }
     .header{
       font-size: 0.8rem;
     }
     .logo{
       font-size: 2.5rem;
     }
+    .wrapper-onmap{
+      height: 80vh;
+    }
     :root{
       font-weight: 100;
-      font-size: 0.5rem;
+      font-size: 6px;
     }
     .header-text{
       font-size: 2em;
@@ -548,27 +563,17 @@
       position: absolute;
       top:2.2em;
       }
-    .textabout{
-      font-size: 1.3em;
+    .descript{
+      font-size:1.1em;
     }
-  }
-  @media screen and (max-width: 380px){
-    .header{
-      font-size: 0.8rem;
-    }
+   
     .logo{
       font-size: 2.5rem;
-    }
-    :root{
-      font-weight: 100;
-      font-size: 0.5rem;
     }
     .header-text{
       font-size: 2.1em;
     }
-    .textabout{
-      font-size: 1.2em;
-    }
+    
   }
-  
+
   
